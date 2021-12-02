@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <title>Formulari</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="formulariojeremy.css">
+<body>
+    <form action="paginaguardado.html" method="post">
+    <h1 class="title"> Curriculum</h1>
+        <fieldset id="table1">
+            <legend class="infobasic"><i>Informacion basica</i></legend>
+            <label>Nombre:</label>
+            <br>
+            <input type="text" name="user" size="50" maxLength="50" placeholder="tunombre" />
+            <br>
+            <label>Altura en centimetros</label>
+            <br>
+            <input id="altura" type="number" name="altura" min="157" max="250" step="1">
+            <br>
+            <label>email</label>
+            <br>
+            <input type="text" name="user" size="20" maxLength="50" placeholder="tuemail@dominio.com" />
+            <br>
+            <label for="start">Fecha de nacimiento :</label>
+            <br>
+            <input type="date" id="start" name="trip-start"
+            value="2021-12-17"
+            min="1950-01-01" max="2021-12-31">
+            <br>            
+        </fieldset>
+        <br>
+        <fieldset id="table2">
+        <legend class="nacionalidad"><i>Nacionalidad</i></legend>      
+        <div>
+            <input type="radio" name="nacion" checked>
+            <label>Española</label>
+        
+            <input type="radio" name="nacion">
+            <label>Comunitario(UE)</label>
+        
+            <input type="radio" name="nacion" >
+            <label>No comunitario</label>
+          </div>
+        </fieldset>
+        <br>
+        <fieldset id="table3">
+        <legend><u><b>Estudios</b></u></legend>
+        <select id="estudios" name="estudios">
+        <option value="" selected="selected">- selecciona -</option>
+        <option value="gm">GM</option>
+        <option value="gs">GS</option>
+        <option value="Bachillerato">Bachillerato</option>
+        <option value="Otros">Otros</option>
+      </select>
+        </fieldset>
+        <br>
+        <fieldset id="table4">
+        <legend class="idiom"><i>Idiomas</i></legend>
+        <div>
+            <input name="catalan" type="checkbox" value="catalan"/> Catalán
+            <input name="castellano" type="checkbox" value="castellano"/> Castellano
+            <input name="ingles" type="checkbox" value="ingles"/> Ingles
+            <input name="chino" type="checkbox" value="chino"/> Chino
+        </div>
+        </fieldset>
+        <br>
+        <fieldset>
+        <input type="reset" name="reset" value="Cancelar" />
+            <input type="submit" value="Enviar">    
+            
+        </fieldset>
+    </form>
+</body>
+</html>
